@@ -1,6 +1,5 @@
 class zcl_uitools definition
   public
-  abstract
   create public .
 
   public section.
