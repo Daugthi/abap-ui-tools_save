@@ -158,10 +158,10 @@ class zcl_uitools_manip_scr implementation.
   METHOD do_groups_match.
     result =
       boolc(
-        ( group1 = '*' or input-group1 = group1 and
-          group2 = '*' or input-group2 = group2 and
-          group3 = '*' or input-group3 = group3 and
-          group2 = '*' or input-group4 = group4 ) ).
+        ( ( group1 = '*' or input-group1 = group1 ) and
+          ( group2 = '*' or input-group2 = group2 ) and
+          ( group3 = '*' or input-group3 = group3 ) and
+          ( group4 = '*' or input-group4 = group4 ) ) ).
   ENDMETHOD.
 
   METHOD is_group_active.
